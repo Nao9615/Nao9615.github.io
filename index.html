@@ -34,7 +34,7 @@
           <div class="container">
             <h1>Profile</h1>
             <p class="text is-en">
-              As a ninth-grade student residing in Tokyo, I harbor a profound enthusiasm for Apple products and am keen on   knowledge about them. Through extensive research conducted from diverse sources, I have shared my insights on the platform X (formerly Twitter). Currently, I am in possession of an M1 iPad Pro, which I find immensely versatile for a wide range of tasks. Additionally, I derive great pleasure from engaging with YouTube videos that delve into the realm of Apple products, gadgets, and the Tokai On Air channel. Among the many captivating members, Mushimegane stands out as my personal favorite.
+              I am a 9th grader living in Tokyo and a devoted Apple enthusiast with a keen interest in gadgets. I strive to understand Apple from multiple perspectives by gathering information from various sources. I actively share Apple-related information on X (formerly Twitter) and also contribute articles on the subject. Currently, I own an M1 iPad Pro, which I use for almost all of my tasks, making me an avid iPad user. I also enjoy watching YouTube videos, particularly those related to Apple, gadgets, and Tokai On-Air (especially Mushimegane).
             </p>
             <p class="text is-ja hidden">
               現在中学3年生で東京在住のApple信者で、ガジェットオタク。様々な観点からの情報を得ることで多角的にAppleのことを考える。普段からXにてAppleに関連したことを中心に情報を発信するほか、記事も執筆する。現在はM1チップモデルのiPad Proを所有し、ほぼ全ての作業をこなすiPad愛好家。また、YouTubeも頻繁に視聴し、Apple・ガジェット関連と東海オンエアが好き。推しは虫さん。              
@@ -53,9 +53,10 @@
           <div class="container">
             <h1>Podcasts</h1>
             <p class="text is-en">
-              This show is a relaxed podcast on X Spaces where we discuss topics related to gadgets, starting with all things Apple. We’d love to hear your thoughts and feedback on the show, as well as any topics you’d like us to cover! Please post them on X using the hashtag #ガジェトーク. You can check out these posts and other featured news in this description section.              </p>
+              "Gadgetalk" is a program where we chat about Apple and other gadget-related topics with everyone on X Spaces. We welcome your feedback, thoughts, and suggestions for topics you'd like us to discuss on the show. Please post them on X using the hashtag #ガジェトーク. You can listen to the show on various podcast platforms via the links below.
+            </p>
             <p class="text is-ja hidden">
-              この番組はAppleの話をはじめ、ガジェットに関する話題をXのスペースで皆さんと雑談しあう番組です。この番組に対するご意見やご感想、番組中で取り扱ってほしい話題はXにハッシュタグ #ガジェトーク をつけてポストしてください。そのポストや、その他取り上げたニュースは、この概要欄からご確認いただけます。
+              「ガジェトーク」はAppleの話をはじめ、ガジェットに関する話題をXのスペースで皆さんと雑談しあう番組です。この番組に対するご意見やご感想、番組中で取り扱ってほしい話題はXにハッシュタグ #ガジェトーク をつけてポストしてください。以下のリンクから各種Podcastからお聴きいただけます。
             </p>
             <div class="buttons">
               <a href="https://podcasts.apple.com/jp/podcast/%E3%82%AC%E3%82%B8%E3%82%A7%E3%83%88%E3%83%BC%E3%82%AF/id1762834711" target="_blank"> Apple Podcast</a>
@@ -83,12 +84,14 @@
             <h1>Gadgets I Own</h1>
             <div class="tab" x-data="{ activeTab: 'tab1' }">
               <div class="tab-buttons">
-                <button :class="{ 'active': activeTab === 'tab1' }" @click="activeTab = 'tab1'">Apple Devices</button>
+                <button :class="{ 'active': activeTab === 'tab1' }" @click="activeTab = 'tab1'">Apple Products</button>
                 <button :class="{ 'active': activeTab === 'tab2' }" @click="activeTab = 'tab2'">Charging Accessories</button>
                 <button :class="{ 'active': activeTab === 'tab3' }" @click="activeTab = 'tab3'">Home Accessories</button>
               </div>
               <ul class="tab-content" x-show="activeTab === 'tab1'">
                 <li>iPad Pro 11-inch 3rd Generation (128GB, Wi-Fi, Space-gray)</li>
+                <li>Apple Pencil 1st Generation</li>
+                <li>Apple Pencil 2nd Generation</li>
                 <li>iPhone SE 3rd Generation (64GB, Starlight)</li>
                 <li>Apple Watch SE (1st Generation, GPS, Space-gray)</li>
                 <li>Magic Keyboard 2018 (JIS, TKL, Silver)</li>
@@ -110,6 +113,8 @@
                 <li>Anker PowerExpand+ 7-in-1 USB Hub</li>
                 <li>Anker 364 USB Hub</li>
                 <li>ELECOM Power Tap ECT-1530BK</li>
+                <li>Anker Portable Magnetic Charger for Apple Watch</li>
+                <li>CIO SmartCoby Dual for Apple Watch</li>
               </ul>
               <ul class="tab-content" x-show="activeTab === 'tab3'">
                 <li>Google Home mini</li>
@@ -159,10 +164,9 @@
       <section class="main">
         <div class="section">
           <div class="container">
-            <!-- <h2>-&nbsp;Profile</h2> -->
             <h1>Profile</h1>
             <p class="text is-en">
-              As a ninth-grade student residing in Tokyo, I harbor a profound enthusiasm for Apple products and am keen on   knowledge about them. Through extensive research conducted from diverse sources, I have shared my insights on the platform X (formerly Twitter). Currently, I am in possession of an M1 iPad Pro, which I find immensely versatile for a wide range of tasks. Additionally, I derive great pleasure from engaging with YouTube videos that delve into the realm of Apple products, gadgets, and the Tokai On Air channel. Among the many captivating members, Mushimegane stands out as my personal favorite.
+              I am a 9th grader living in Tokyo and a devoted Apple enthusiast with a keen interest in gadgets. I strive to understand Apple from multiple perspectives by gathering information from various sources. I actively share Apple-related information on X (formerly Twitter) and also contribute articles on the subject. Currently, I own an M1 iPad Pro, which I use for almost all of my tasks, making me an avid iPad user. I also enjoy watching YouTube videos, particularly those related to Apple, gadgets, and Tokai On-Air (especially Mushimegane).
             </p>
             <p class="text is-ja hidden">
               現在中学3年生で東京在住のApple信者で、ガジェットオタク。様々な観点からの情報を得ることで多角的にAppleのことを考える。普段からXにてAppleに関連したことを中心に情報を発信するほか、記事も執筆する。現在はM1チップモデルのiPad Proを所有し、ほぼ全ての作業をこなすiPad愛好家。また、YouTubeも頻繁に視聴し、Apple・ガジェット関連と東海オンエアが好き。推しは虫さん。              
@@ -181,9 +185,10 @@
           <div class="container">
             <h1>Podcasts</h1>
             <p class="text is-en">
-              This show is a relaxed podcast on X Spaces where we discuss topics related to gadgets, starting with all things Apple. We’d love to hear your thoughts and feedback on the show, as well as any topics you’d like us to cover! Please post them on X using the hashtag #ガジェトーク. You can check out these posts and other featured news in this description section.              </p>
+              "Gadgetalk" is a program where we chat about Apple and other gadget-related topics with everyone on X Spaces. We welcome your feedback, thoughts, and suggestions for topics you'd like us to discuss on the show. Please post them on X using the hashtag #ガジェトーク. You can listen to the show on various podcast platforms via the links below.
+            </p>
             <p class="text is-ja hidden">
-              この番組はAppleの話をはじめ、ガジェットに関する話題をXのスペースで皆さんと雑談しあう番組です。この番組に対するご意見やご感想、番組中で取り扱ってほしい話題はXにハッシュタグ #ガジェトーク をつけてポストしてください。そのポストや、その他取り上げたニュースは、この概要欄からご確認いただけます。
+              「ガジェトーク」はAppleの話をはじめ、ガジェットに関する話題をXのスペースで皆さんと雑談しあう番組です。この番組に対するご意見やご感想、番組中で取り扱ってほしい話題はXにハッシュタグ #ガジェトーク をつけてポストしてください。以下のリンクから各種Podcastからお聴きいただけます。
             </p>
             <div class="buttons">
               <a href="https://podcasts.apple.com/jp/podcast/%E3%82%AC%E3%82%B8%E3%82%A7%E3%83%88%E3%83%BC%E3%82%AF/id1762834711" target="_blank"> Apple Podcast</a>
@@ -217,6 +222,8 @@
               </div>
               <ul class="tab-content" x-show="activeTab === 'tab1'">
                 <li>iPad Pro 11-inch 3rd Generation (128GB, Wi-Fi, Space-gray)</li>
+                <li>Apple Pencil 1st Generation</li>
+                <li>Apple Pencil 2nd Generation</li>
                 <li>iPhone SE 3rd Generation (64GB, Starlight)</li>
                 <li>Apple Watch SE (1st Generation, GPS, Space-gray)</li>
                 <li>Magic Keyboard 2018 (JIS, TKL, Silver)</li>
@@ -238,6 +245,8 @@
                 <li>Anker PowerExpand+ 7-in-1 USB Hub</li>
                 <li>Anker 364 USB Hub</li>
                 <li>ELECOM Power Tap ECT-1530BK</li>
+                <li>Anker Portable Magnetic Charger for Apple Watch</li>
+                <li>CIO SmartCoby Dual for Apple Watch</li>
               </ul>
               <ul class="tab-content" x-show="activeTab === 'tab3'">
                 <li>Google Home mini</li>
