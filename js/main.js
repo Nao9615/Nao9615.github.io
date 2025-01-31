@@ -8,7 +8,6 @@ fullHeight();
 
 
 // カラーテーマ
-
 const themeBtn = document.querySelector("#color-theme-btn");
 const darkModeMediaQuery = window.matchMedia('(prefers-color-scheme: dark)');
 
