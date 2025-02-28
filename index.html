@@ -25,58 +25,58 @@
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./Fonts/font.css">
     <link rel="stylesheet" href="./css/utility.css">
-    <link rel="stylesheet" href="./css/black-unity.css">
     <link rel="stylesheet" href="./css/main.css">
     <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js" defer></script>
   </head>
-  <body class="black-unity-theme">
+  <body>
     <main class="page is-desktop">
-      <header class="header blur">
-        <div class="container">
-          <h1>Nao</h1>
-          <div class="controll">
-            <input type="checkbox" name="Lang" id="Lang-En-Ja" style="display: none;">
-            <label class="header-button" for="Lang-En-Ja">
-              <div class="lang-btn">
-                EN / JA
-              </div>
-            </label>
-            <input type="checkbox" name="dark-mode" id="color-theme-btn" style="display: none;">
-            <label class="header-button" for="color-theme-btn">
-              <div class="color-theme-icon"></div>
-            </label>
+      <div class="header-logo">
+        <h1>Nao</h1>
+      </div>
+      <div class="preferences">
+        <input type="checkbox" name="Lang" id="Lang-En-Ja" style="display: none;">
+        <label class="header-button" for="Lang-En-Ja">
+          <div class="lang-btn">
+            EN / JA
           </div>
-        </div>
-      </header>
+        </label>
+        <input type="checkbox" name="dark-mode" id="color-theme-btn" style="display: none;">
+        <label class="header-button" for="color-theme-btn">
+          <div class="color-theme-icon"></div>
+        </label>
+      </div>
       <section class="main">
         <div class="hero">
-          <img src="./svg/Unity25.svg">
-          <!-- <div class="logo-box">
+          <div class="logo-box">
             <img src="./svg/logo-dark.svg" alt="">
-          </div> -->
+          </div>
         </div>
         <div class="section">
           <div class="container">
-            <h1 class="title text-red">Profile</h1>
+            <h1 class="title">
+              Profile
+            </h1>
             <p class="text is-en">
               I am a 9th grader living in Tokyo and a devoted Apple enthusiast with a keen interest in gadgets. I strive to understand Apple from multiple perspectives by gathering information from various sources. I actively share Apple-related information on X (formerly Twitter) and also contribute articles on the subject. Currently, I own an M1 iPad Pro, which I use for almost all of my tasks, making me an avid iPad user. I also enjoy watching YouTube videos, particularly those related to Apple, gadgets, and Tokai On-Air (especially Mushimegane).
             </p>
             <p class="text is-ja hidden">
-              現在中学3年生で東京在住のApple信者で、ガジェットオタク。様々な観点からの情報を得ることで多角的にAppleのことを考える。普段からXにてAppleに関連したことを中心に情報を発信するほか、記事も執筆する。現在はM1チップモデルのiPad Proを所有し、ほぼ全ての作業をこなすiPad愛好家。また、YouTubeも頻繁に視聴し、Apple・ガジェット関連と東海オンエアが好き。推しは虫さん。              
+              現在中学3年生で東京在住のApple信者で、ガジェットオタク。様々な観点からの情報を得ることで多角的にAppleのことを考える。普段からXにてAppleに関連したことを中心に情報を発信するほか、記事も執筆する。現在はM1チップモデルのiPad Proを所有し、ほぼ全ての作業をこなすiPad愛好家。また、YouTubeも頻繁に視聴し、Apple・ガジェット関連と東海オンエアが好き。推しは虫さん。
             </p>
             <div class="buttons">
-              <a href="http://x.com/nao_9615" target="_blank">X</a>
-              <a href="https://x.com/Nao_9615_Key" target="_blank">X<span>(SUB)</span></a>
-              <a href="https://www.instagram.com/nao_9615_/" target="_blank">Instagram</a>
-              <a href="https://www.threads.net/@nao_9615_?xmt=AQGzEerBRjPf08DeDGtDnv4L3UVigB3nUH5K8XBM8Lp0cAQ" target="_blank">Threads</a>
-              <a href="https://bsky.app/profile/nao9615.bsky.social" target="_blank">BlueSky</a>
-              <a href="https://fiicen.jp/field/Nao_9615/" target="_blank">Fiicen</a>
+              <a href="http://x.com/nao_9615" target="_blank" rel="noopener">X</a>
+              <a href="https://x.com/Nao_9615_Key" target="_blank" rel="noopener">X<span>(SUB)</span></a>
+              <a href="https://www.instagram.com/nao_9615_/" target="_blank" rel="noopener">Instagram</a>
+              <a href="https://www.threads.net/@nao_9615_?xmt=AQGzEerBRjPf08DeDGtDnv4L3UVigB3nUH5K8XBM8Lp0cAQ" target="_blank" rel="noopener">Threads</a>
+              <a href="https://bsky.app/profile/nao9615.bsky.social" target="_blank" rel="noopener">BlueSky</a>
+              <a href="https://fiicen.jp/field/Nao_9615/" target="_blank" rel="noopener">Fiicen</a>
             </div>
           </div>
         </div>
         <div class="section">
           <div class="container">
-            <h1 class="title text-yellow">Podcasts</h1>
+            <h1 class="title">
+              Podcasts
+            </h1>
             <p class="text is-en">
               "Gadgetalk" is a program where we chat about Apple and other gadget-related topics with everyone on X Spaces. We welcome your feedback, thoughts, and suggestions for topics you'd like us to discuss on the show. Please post them on X using the hashtag #ガジェトーク. You can listen to the show on various podcast platforms via the links below.
             </p>
@@ -84,15 +84,17 @@
               「ガジェトーク」はAppleの話をはじめ、ガジェットに関する話題をXのスペースで皆さんと雑談しあう番組です。この番組に対するご意見やご感想、番組中で取り扱ってほしい話題はXにハッシュタグ #ガジェトーク をつけてポストしてください。以下のリンクから各種Podcastからお聴きいただけます。
             </p>
             <div class="buttons">
-              <a href="https://podcasts.apple.com/jp/podcast/%E3%82%AC%E3%82%B8%E3%82%A7%E3%83%88%E3%83%BC%E3%82%AF/id1762834711" target="_blank"> Apple Podcast</a>
-              <a href="https://music.youtube.com/playlist?list=PLqcBUxXcWtOH46zjAoI4ss--0ZawcF46f&si=ZlB7IYPIC20ZJWjT" target="_blank">Youtube Music</a>
-              <a href="https://open.spotify.com/show/60DDxgJRuj6lIsCBygD1XF" target="_blank">Spotify</a>
+              <a href="https://podcasts.apple.com/jp/podcast/%E3%82%AC%E3%82%B8%E3%82%A7%E3%83%88%E3%83%BC%E3%82%AF/id1762834711" target="_blank" rel="noopener"> Apple Podcast</a>
+              <a href="https://music.youtube.com/playlist?list=PLqcBUxXcWtOH46zjAoI4ss--0ZawcF46f&si=ZlB7IYPIC20ZJWjT" target="_blank" rel="noopener">Youtube Music</a>
+              <a href="https://open.spotify.com/show/60DDxgJRuj6lIsCBygD1XF" target="_blank" rel="noopener">Spotify</a>
             </div>
           </div>
         </div>
         <div class="section">
           <div class="container">
-            <h1 class="title text-green">Magazine</h1>
+            <h1 class="title">
+              Magazine
+            </h1>
             <p class="text is-en">
               I write news and reviews about Apple on the blog “Ichigo Tsushin” with my personal opinions.
             </p>
@@ -100,21 +102,25 @@
               Appleに関するニュースやレビューを、個人的な感想を交えてブログ「いちご通信」に執筆しています。
             </p>
             <div class="buttons">
-              <a href="https://ichigomoti.jp/?author=10" target="_blank">Visit Site</a>
+              <a href="https://ichigomoti.jp/?author=10" target="_blank" rel="noopener">Visit Site</a>
             </div>
           </div>
         </div>
         <div class="section">
           <div class="container">
-            <h1 class="title text-dark-red">Reciprocal link</h1>
+            <h1 class="title">
+              Reciprocal link
+            </h1>
             <div class="buttons">
-              <a href="https://linkserver.jp/" target="_blank">Link.2011</a>
+              <a href="https://linkserver.jp/" target="_blank" rel="noopener">Link.2011</a>
             </div>
           </div>
         </div>
         <div class="section">
           <div class="container">
-            <h1 class="title text-dark-yellow">Gadgets I Own</h1>
+            <h1 class="title">
+              Gadgets i own
+            </h1>
             <div class="tab" x-data="{ activeTab: 'tab1' }">
               <div class="tab-buttons">
                 <button :class="{ 'active': activeTab === 'tab1' }" @click="activeTab = 'tab1'">Apple Products</button>
@@ -152,28 +158,48 @@
                 <li><a href="https://store.google.com/jp/product/google_nest_mini?hl=ja&pli=1" target="_blank">Google Home mini</a></li>
                 <li><a href="https://www.switchbot.jp/products/switchbot-hub2?srsltid=AfmBOopgpBq_UNAbT013HvSCr6myId8xQ2Zpow0OABt0TV6K-Tzf3YXk" target="_blank">SwitchBot Hub 2</a></li>
                 <li><a href="https://www.flexispot.jp/ef1.html?srsltid=AfmBOoq0e7_mP4IqMXWIuM7NIyWYDSONKn_lSYn3k6w_MlguqO_FMY-E" target="_blank">Flexispot EF-1</a></li>
-              </ul>              
+              </ul>
             </div>
           </div>
         </div>
         <div class="section">
           <div class="container">
-            <h1 class="title text-dark-green">Contact</h1>
-            <div class="contact-buttons">
-              <a class="button" href="mailto:contact.nao.9615@gmail.com">
-                <h1>Emaill</h1>
-                <h2>contact.nao.9615@gmail.com</h2>
-                <p>(SEND EMAIL)</p>
+            <h1 class="title">
+              Contact
+            </h1>
+            <div class="contact-list">
+              <a href="mailto:contact.nao.9615@gmail.com" target="_blank" rel="noopener">
+                <ul>
+                  <li>
+                    <h1>Email</h1>
+                    <h2>contact.nao.9615@gmail.com</h2>
+                  </li>
+                  <li>
+                    <p>(SEND Email)</p>
+                  </li>
+                </ul>
               </a>
-              <a class="button" href="https://x.com/messages/compose?recipient_id=1582637002209382400" target="_blank">
-                <h1>X DM</h1>
-                <h2>@nao_9615</h2>
-                <p>(VISIT X.COM)</p>
+              <a href="https://x.com/messages/compose?recipient_id=1582637002209382400" target="_blank" rel="noopener">
+                <ul>
+                  <li>
+                    <h1>X Direct Message</h1>
+                    <h2>@Nao_9615</h2>
+                  </li>
+                  <li>
+                    <p>(VISIT x.com)</p>
+                  </li>
+                </ul>
               </a>
-              <a class="button" href="https://discord.com/users/1090118805935632454" target="_blank">
-                <h1>Discord</h1>
-                <h2>@nao_9615</h2>
-                <p>(VISIT DISCORD)</p>
+              <a href="https://discord.com/users/1090118805935632454" target="_blank" rel="noopener">
+                <ul>
+                  <li>
+                    <h1>Discord</h1>
+                    <h2>contact.nao.9615@gmail.com</h2>
+                  </li>
+                  <li>
+                    <p>(VISIT discord.com)</p>
+                  </li>
+                </ul>
               </a>
             </div>
           </div>
@@ -196,36 +222,40 @@
                 EN / JA
               </div>
             </label>
-            <!-- <input type="checkbox" name="dark-mode" id="color-theme-btn" style="display: none;">
+            <input type="checkbox" name="dark-mode" id="color-theme-btn" style="display: none;">
             <label class="header-button" for="color-theme-btn">
               <div class="color-theme-icon"></div>
-            </label> -->
+            </label>
           </div>
         </div>
       </header>
       <section class="main">
         <div class="section">
           <div class="container">
-            <h1 class="title text-red">Profile</h1>
+            <h1 class="title">
+              Profile
+            </h1>
             <p class="text is-en">
               I am a 9th grader living in Tokyo and a devoted Apple enthusiast with a keen interest in gadgets. I strive to understand Apple from multiple perspectives by gathering information from various sources. I actively share Apple-related information on X (formerly Twitter) and also contribute articles on the subject. Currently, I own an M1 iPad Pro, which I use for almost all of my tasks, making me an avid iPad user. I also enjoy watching YouTube videos, particularly those related to Apple, gadgets, and Tokai On-Air (especially Mushimegane).
             </p>
             <p class="text is-ja hidden">
-              現在中学3年生で東京在住のApple信者で、ガジェットオタク。様々な観点からの情報を得ることで多角的にAppleのことを考える。普段からXにてAppleに関連したことを中心に情報を発信するほか、記事も執筆する。現在はM1チップモデルのiPad Proを所有し、ほぼ全ての作業をこなすiPad愛好家。また、YouTubeも頻繁に視聴し、Apple・ガジェット関連と東海オンエアが好き。推しは虫さん。              
+              現在中学3年生で東京在住のApple信者で、ガジェットオタク。様々な観点からの情報を得ることで多角的にAppleのことを考える。普段からXにてAppleに関連したことを中心に情報を発信するほか、記事も執筆する。現在はM1チップモデルのiPad Proを所有し、ほぼ全ての作業をこなすiPad愛好家。また、YouTubeも頻繁に視聴し、Apple・ガジェット関連と東海オンエアが好き。推しは虫さん。
             </p>
             <div class="buttons">
-              <a href="http://x.com/nao_9615" target="_blank">X</a>
-              <a href="https://x.com/Nao_9615_Key" target="_blank">X<span>(SUB)</span></a>
-              <a href="https://www.instagram.com/nao_9615_/" target="_blank">Instagram</a>
-              <a href="https://www.threads.net/@nao_9615_?xmt=AQGzEerBRjPf08DeDGtDnv4L3UVigB3nUH5K8XBM8Lp0cAQ" target="_blank">Threads</a>
-              <a href="https://bsky.app/profile/nao9615.bsky.social" target="_blank">BlueSky</a>
-              <a href="https://fiicen.jp/field/Nao_9615/" target="_blank">Fiicen</a>
+              <a href="http://x.com/nao_9615" target="_blank" rel="noopener">X</a>
+              <a href="https://x.com/Nao_9615_Key" target="_blank" rel="noopener">X<span>(SUB)</span></a>
+              <a href="https://www.instagram.com/nao_9615_/" target="_blank" rel="noopener">Instagram</a>
+              <a href="https://www.threads.net/@nao_9615_?xmt=AQGzEerBRjPf08DeDGtDnv4L3UVigB3nUH5K8XBM8Lp0cAQ" target="_blank" rel="noopener">Threads</a>
+              <a href="https://bsky.app/profile/nao9615.bsky.social" target="_blank" rel="noopener">BlueSky</a>
+              <a href="https://fiicen.jp/field/Nao_9615/" target="_blank" rel="noopener">Fiicen</a>
             </div>
           </div>
         </div>
         <div class="section">
           <div class="container">
-            <h1 class="title text-green">Podcasts</h1>
+            <h1 class="title">
+              Podcast
+            </h1>
             <p class="text is-en">
               "Gadgetalk" is a program where we chat about Apple and other gadget-related topics with everyone on X Spaces. We welcome your feedback, thoughts, and suggestions for topics you'd like us to discuss on the show. Please post them on X using the hashtag #ガジェトーク. You can listen to the show on various podcast platforms via the links below.
             </p>
@@ -233,15 +263,17 @@
               「ガジェトーク」はAppleの話をはじめ、ガジェットに関する話題をXのスペースで皆さんと雑談しあう番組です。この番組に対するご意見やご感想、番組中で取り扱ってほしい話題はXにハッシュタグ #ガジェトーク をつけてポストしてください。以下のリンクから各種Podcastからお聴きいただけます。
             </p>
             <div class="buttons">
-              <a href="https://podcasts.apple.com/jp/podcast/%E3%82%AC%E3%82%B8%E3%82%A7%E3%83%88%E3%83%BC%E3%82%AF/id1762834711" target="_blank"> Apple Podcast</a>
-              <a href="https://music.youtube.com/playlist?list=PLqcBUxXcWtOH46zjAoI4ss--0ZawcF46f&si=ZlB7IYPIC20ZJWjT" target="_blank">Youtube Music</a>
-              <a href="https://open.spotify.com/show/60DDxgJRuj6lIsCBygD1XF" target="_blank">Spotify</a>
+              <a href="https://podcasts.apple.com/jp/podcast/%E3%82%AC%E3%82%B8%E3%82%A7%E3%83%88%E3%83%BC%E3%82%AF/id1762834711" target="_blank" rel="noopener"> Apple Podcast</a>
+              <a href="https://music.youtube.com/playlist?list=PLqcBUxXcWtOH46zjAoI4ss--0ZawcF46f&si=ZlB7IYPIC20ZJWjT" target="_blank" rel="noopener">Youtube Music</a>
+              <a href="https://open.spotify.com/show/60DDxgJRuj6lIsCBygD1XF" target="_blank" rel="noopener">Spotify</a>
             </div>
           </div>
         </div>
         <div class="section">
           <div class="container">
-            <h1 class="title text-yellow">Magazine</h1>
+            <h1 class="title">
+              Magazine
+            </h1>
             <p class="text is-en">
               I write news and reviews about Apple on the blog “Ichigo Tsushin” with my personal opinions.
             </p>
@@ -249,21 +281,25 @@
               Appleに関するニュースやレビューを、個人的な感想を交えてブログ「いちご通信」に執筆しています。
             </p>
             <div class="buttons">
-              <a href="https://ichigomoti.jp/?author=10" target="_blank">Visit Site</a>
+              <a href="https://ichigomoti.jp/?author=10" target="_blank" rel="noopener">Visit Site</a>
             </div>
           </div>
         </div>
         <div class="section">
           <div class="container">
-            <h1 class="title text-dark-red">Reciprocal link</h1>
+            <h1 class="title">
+              Reciprocal link
+            </h1>
             <div class="buttons">
-              <a href="https://linkserver.jp/" target="_blank">Link.2011</a>
+              <a href="https://linkserver.jp/" target="_blank" rel="noopener">Link.2011</a>
             </div>
           </div>
         </div>
         <div class="section">
           <div class="container">
-            <h1 class="title text-dark-green">Gadgets I Own</h1>
+            <h1 class="title">
+              Gadgets i own
+            </h1>
             <div class="tab" x-data="{ activeTab: 'tab1' }">
               <div class="tab-buttons">
                 <button :class="{ 'active': activeTab === 'tab1' }" @click="activeTab = 'tab1'">Apple</button>
@@ -301,13 +337,15 @@
                 <li><a href="https://store.google.com/jp/product/google_nest_mini?hl=ja&pli=1" target="_blank">Google Home mini</a></li>
                 <li><a href="https://www.switchbot.jp/products/switchbot-hub2?srsltid=AfmBOopgpBq_UNAbT013HvSCr6myId8xQ2Zpow0OABt0TV6K-Tzf3YXk" target="_blank">SwitchBot Hub 2</a></li>
                 <li><a href="https://www.flexispot.jp/ef1.html?srsltid=AfmBOoq0e7_mP4IqMXWIuM7NIyWYDSONKn_lSYn3k6w_MlguqO_FMY-E" target="_blank">Flexispot EF-1</a></li>
-              </ul>  
+              </ul>
             </div>
           </div>
         </div>
         <div class="section">
           <div class="container">
-            <h1 class="title text-dark-green">Contact</h1>
+            <h1 class="title">
+              Contact
+            </h1>
             <ul>
               <li></li>
             </ul>
