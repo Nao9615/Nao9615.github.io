@@ -1,373 +1,276 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
   <head>
     <title>Nao</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="現在中学3年生で東京在住のApple信者で、ガジェットオタク。様々な観点からの情報を得ることで多角的にAppleのことを考える。">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="現在中学3年生で東京在住のApple信者で、ガジェットオタク。様々な観点からの情報を得ることで多角的にAppleのことを考える。"
+    />
     <!-- OpenGraph -->
-    <meta property="og:locale" content="ja_JP">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://nao9615.github.io">
-    <meta property="og:title" content="Nao">
-    <meta property="og:site_name" content="Nao">
-    <meta property="og:description" content="現在中学3年生で東京在住のApple信者で、ガジェットオタク。様々な観点からの情報を得ることで多角的にAppleのことを考える。">
-    <meta property="og:image" content="https://nao9615.github.io/card.png">
+    <meta property="og:locale" content="ja_JP" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://nao9615.github.io" />
+    <meta property="og:title" content="Nao" />
+    <meta property="og:site_name" content="Nao" />
+    <meta
+      property="og:description"
+      content="現在中学3年生で東京在住のApple信者で、ガジェットオタク。様々な観点からの情報を得ることで多角的にAppleのことを考える。"
+    />
+    <meta property="og:image" content="https://nao9615.github.io/card.png" />
     <!-- Twitter -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Nao">
-    <meta name="twitter:description" content="現在中学3年生で東京在住のApple信者で、ガジェットオタク。様々な観点からの情報を得ることで多角的にAppleのことを考える。">
-    <meta name="twitter:image" content="https://nao9615.github.io/card.png">
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Nao" />
+    <meta
+      name="twitter:description"
+      content="現在中学3年生で東京在住のApple信者で、ガジェットオタク。様々な観点からの情報を得ることで多角的にAppleのことを考える。"
+    />
+    <meta name="twitter:image" content="https://nao9615.github.io/card.png" />
     <!-- icon -->
-    <link rel="icon" href="https://nao9615.github.io/icon.png" type="image/x-icon">
-    <link rel="apple-touch-icon" sizes="2084x2084" href="https://nao9615.github.io/icon.png">
+    <!-- <link
+      rel="icon"
+      href="https://nao9615.github.io/icon.png"
+      type="image/x-icon"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="2084x2084"
+      href="https://nao9615.github.io/icon.png"
+    /> -->
     <!-- omajinai -->
-    <link rel="stylesheet" href="./css/reset.css">
-    <link rel="stylesheet" href="./Fonts/font.css">
-    <link rel="stylesheet" href="./css/utility.css">
-    <link rel="stylesheet" href="./css/main.css">
-    <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js" defer></script>
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./Fonts/font.css" />
+    <link rel="stylesheet" href="./css/utility.css" />
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/pride25.css" />
+    <script
+      src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"
+      defer
+    ></script>
   </head>
   <body>
-    <main class="page is-desktop">
-      <div class="header-logo">
-        <h1>Nao</h1>
-      </div>
+    <header class="header">
+      <h1>Nao</h1>
       <div class="preferences">
-        <input type="checkbox" name="Lang" id="Lang-En-Ja" style="display: none;">
+        <input
+          type="checkbox"
+          name="Lang"
+          id="Lang-En-Ja"
+          style="display: none"
+        />
         <label class="header-button" for="Lang-En-Ja">
-          <div class="lang-btn">
-            EN / JA
-          </div>
+          <p class="lang-btn">English / Japanese</p>
         </label>
-        <input type="checkbox" name="dark-mode" id="color-theme-btn" style="display: none;">
+        <input
+          type="checkbox"
+          name="dark-mode"
+          id="color-theme-btn"
+          style="display: none"
+        />
         <label class="header-button" for="color-theme-btn">
           <div class="color-theme-icon"></div>
         </label>
       </div>
-      <section class="main">
-        <div class="hero">
-          <div class="logo-box">
-            <img src="./svg/logo-dark.svg" alt="">
-          </div>
-        </div>
-        <div class="section">
-          <div class="container">
-            <h1 class="title">
-              Profile
-            </h1>
-            <p class="text is-en">
-              I am a 10th grader living in Tokyo and a devoted Apple enthusiast with a keen interest in gadgets. I strive to understand Apple from multiple perspectives by gathering information from various sources. I actively share Apple-related information on X (formerly Twitter) and also contribute articles on the subject. Currently, I own an M1 iPad Pro, which I use for almost all of my tasks, making me an avid iPad user. I also enjoy watching YouTube videos, particularly those related to Apple, gadgets, and Tokai On-Air (especially Mushimegane).
-            </p>
-            <p class="text is-ja hidden">
-              現在高校一年生で東京在住のApple信者で、ガジェットオタク。様々な観点からの情報を得ることで多角的にAppleのことを考える。普段からXにてAppleに関連したことを中心に情報を発信するほか、記事も執筆する。現在はM1チップモデルのiPad Proを所有し、ほぼ全ての作業をこなすiPad愛好家。また、YouTubeも頻繁に視聴し、Apple・ガジェット関連と東海オンエアが好き。推しは虫さん。
-            </p>
-            <div class="buttons">
-              <a href="http://x.com/nao_9615" target="_blank" rel="noopener">X</a>
-              <a href="https://x.com/Nao_9615_Key" target="_blank" rel="noopener">X<span>(SUB)</span></a>
-              <a href="https://www.instagram.com/nao_9615_/" target="_blank" rel="noopener">Instagram</a>
-              <a href="https://www.threads.net/@nao_9615_?xmt=AQGzEerBRjPf08DeDGtDnv4L3UVigB3nUH5K8XBM8Lp0cAQ" target="_blank" rel="noopener">Threads</a>
-              <a href="https://bsky.app/profile/nao9615.bsky.social" target="_blank" rel="noopener">BlueSky</a>
-              <a href="https://fiicen.jp/field/Nao_9615/" target="_blank" rel="noopener">Fiicen</a>
-            </div>
-          </div>
-        </div>
-        <div class="section">
-          <div class="container">
-            <h1 class="title">
-              Podcasts
-            </h1>
-            <p class="text is-en">
-              "Gadgetalk" is a program where we chat about Apple and other gadget-related topics with everyone on X Spaces. We welcome your feedback, thoughts, and suggestions for topics you'd like us to discuss on the show. Please post them on X using the hashtag #ガジェトーク. You can listen to the show on various podcast platforms via the links below.
-            </p>
-            <p class="text is-ja hidden">
-              「ガジェトーク」はAppleの話をはじめ、ガジェットに関する話題をXのスペースで皆さんと雑談しあう番組です。この番組に対するご意見やご感想、番組中で取り扱ってほしい話題はXにハッシュタグ #ガジェトーク をつけてポストしてください。以下のリンクから各種Podcastからお聴きいただけます。
-            </p>
-            <div class="buttons">
-              <a href="https://podcasts.apple.com/jp/podcast/%E3%82%AC%E3%82%B8%E3%82%A7%E3%83%88%E3%83%BC%E3%82%AF/id1762834711" target="_blank" rel="noopener"> Apple Podcast</a>
-              <a href="https://music.youtube.com/playlist?list=PLqcBUxXcWtOH46zjAoI4ss--0ZawcF46f&si=ZlB7IYPIC20ZJWjT" target="_blank" rel="noopener">Youtube Music</a>
-              <a href="https://open.spotify.com/show/60DDxgJRuj6lIsCBygD1XF" target="_blank" rel="noopener">Spotify</a>
-            </div>
-          </div>
-        </div>
-        <div class="section">
-          <div class="container">
-            <h1 class="title">
-              Magazine
-            </h1>
-            <p class="text is-en">
-              I write news and reviews about Apple on the blog “Ichigo Tsushin” with my personal opinions.
-            </p>
-            <p class="text is-ja hidden">
-              Appleに関するニュースやレビューを、個人的な感想を交えてブログ「いちご通信」に執筆しています。
-            </p>
-            <div class="buttons">
-              <a href="https://ichigomoti.jp/?author=10" target="_blank" rel="noopener">Visit Site</a>
-            </div>
-          </div>
-        </div>
-        <div class="section">
-          <div class="container">
-            <h1 class="title">
-              Reciprocal Link
-            </h1>
-            <div class="buttons">
-              <a href="https://www.gasukaku.net/" target="_blank" rel="noopener">Gasukaku</a>
-              <a href="https://linkserver.jp/" target="_blank" rel="noopener">Link.2011</a>
-            </div>
-          </div>
-        </div>
-        <div class="section">
-          <div class="container">
-            <h1 class="title">
-              Gadgets I Own
-            </h1>
-            <div class="tab" x-data="{ activeTab: 'tab1' }">
-              <div class="tab-buttons">
-                <button :class="{ 'active': activeTab === 'tab1' }" @click="activeTab = 'tab1'">Apple Products</button>
-                <button :class="{ 'active': activeTab === 'tab2' }" @click="activeTab = 'tab2'">Charging Accessories</button>
-                <button :class="{ 'active': activeTab === 'tab3' }" @click="activeTab = 'tab3'">Home Accessories</button>
-              </div>
-              <ul class="tab-content" x-show="activeTab === 'tab1'">
-                <li><a href="https://web.archive.org/web/20220725114402/https://www.apple.com/ipad-pro/" target="_blank">iPad Pro 11-inch 3rd Generation (128GB, Wi-Fi, Space-gray)</a></li>
-                <li><a href="https://www.apple.com/shop/product/MQLY3AM/A/apple-pencil-1st-generation?fnode=a99f2033f8c044b7d15cdf295f9c58cc45e48a89b56e414ccc225c4fbd76455c7c89a1ea5fea6cd95b6e422196cb0adc7d234ed887446573813923796917f4cdf3b4cdd4a1f063e5039952d5b7f2fc8639334cbdcc3d5669403cc7f7187293c1" target="_blank">Apple Pencil 1st Generation</a></li>
-                <li><a href="https://www.apple.com/shop/product/MU8F2AM/A/apple-pencil-2nd-generation" target="_blank">Apple Pencil 2nd Generation</a></li>
-                <li><a href="https://www.apple.com/iphone-se/" target="_blank">iPhone SE 3rd Generation (64GB, Starlight)</a></li>
-                <li><a href="https://www.apple.com/apple-watch-series-10/" target="_blank">Apple Watch Series 10 (GPS, Jet Black)</a></li>
-                <li><a href="https://www.apple.com/apple-watch-se/" target="_blank">Apple Watch SE (1st Generation, GPS, Space-gray)</a></li>
-                <li><a href="https://web.archive.org/web/20180504104411/https://www.apple.com/shop/product/MLA22LL/A/magic-keyboard-us-english?fnode=9d" target="_blank">Magic Keyboard 2018 (JIS, TKL, Silver)</a></li>
-                <li><a href="https://web.archive.org/web/20190401173805/http://www.apple.com/airpods/" target="_blank">AirPods 2nd Generation</a></li>
-                <li><a href="https://www.apple.com/airpods-4/" target="_blank">AirPods 4th Generation (ANC Model)</a></li>
-                <li><a href="https://web.archive.org/web/20171004024720/https://www.apple.com/shop/buy-iphone/iphone-7#" target="_blank">iPhone 7 (32GB, Silver)</a></li>
-              </ul>
-              <ul class="tab-content" x-show="activeTab === 'tab2'">
-                <li><a href="https://www.ankerjapan.com/products/a2664?srsltid=AfmBOorcHW8CmHBROeU4jhkPOS2_7SBK7Kl2W0I_AdD1IcigY82e7P2e" target="_blank">Anker Nano II 45W</a></li>
-                <li><a href="https://www.ankerjapan.com/products/a2039?srsltid=AfmBOoq5lpJAbfWAvXaVaRaWVofkhwyD4Fb94mgeZbV3D4HlDxCpKiEp" target="_blank">Anker Nano 3 47W USB-C x2 (Anker 523)</a></li>
-                <li><a href=https://www.ankerjapan.com/products/a2620?srsltid=AfmBOooJR9r1BQVGzNeYwmwOGBS4W_GOd2ztOsz1JWtpCeoMFdwHXYnF" target="_blank">Anker PowerPort mini 12W USB-A x2</a></li>
-                <li><a href="https://www.ankerjapan.com/products/y2330?srsltid=AfmBOoqzozGX3XBp7N__6ot_Dclv0PZl_Y9x-CLm35pT91DqVBNL8JaQ" target="_blank">Anker PowerLine Play 90 (USB-A to Lightning, 1.8m)</a></li>
-                <li><a href="https://www.ankerjapan.com/products/a8663?srsltid=AfmBOopCfA2gbRyDM5OWqWc7tSj170Di7pHrgetH8OrUbc44eKwMNuL5" target="_blank">Anker PowerLine Flow (USB-C to Lightning, 1.8m)</a></li>
-                <li><a href="https://www.ankerjapan.com/products/a8487?srsltid=AfmBOorIM-Co-vE9QDuuRU3vMLMT--M_y2OzUY4QB6lUgcEjqUV46k8g" target="_blank">Anker 515 USB4 Cable</a></li>
-                <li><a href="https://www.ankerjapan.com/products/a2524012?srsltid=AfmBOoq7sJb-QNX8M94n366gwCDVnvxOG7iXZgvW8bv6_AmWZMAi_RBt" target="_blank">Anker PowerWave 10 Stand</a></li>
-                <li><a href="https://www.ankerjapan.com/products/a1634?srsltid=AfmBOorjfx1hAjfr0FaDXNrhRmytDzntF6pfri3bKs13F7OxcADhSoaW" target="_blank">Anker PowerCore Fusion (30W, 5000mAh, Built-In USB-C)</a></li>
-                <li><a href="https://www.ankerjapan.com/products/a8352?srsltid=AfmBOorZzW2iKKNOXWtAXkAPjF_7CZns86rBxfw2BHg8k6AYCK24Vx6K" target="_blank">Anker PowerExpand+ 7-in-1 USB Hub</a></li>
-                <li><a href="https://www.ankerjapan.com/products/a83a2?srsltid=AfmBOordqmSnXIbZPLWckt6SBxyL_guon14rX0d0Lwz0Xb5EaP7Pt_pA" target="_blank">Anker 364 USB-C Hub</a></li>
-                <li><a href="https://www.elecom.co.jp/products/ECT-1530BK.html" target="_blank">ELECOM Power Tap ECT-1530BK</a></li>
-                <li><a href="https://www.ankerjapan.com/products/a8803?srsltid=AfmBOoockmxsDZjNte6KBRZqRSY7STlbbNK8z7aq1_iv5clV7eo_gQp6" target="_blank">Anker Portable Magnetic Charger for Apple Watch</a></li>
-                <li><a href="https://connectinternationalone.co.jp/cioproduct/mobilebattery/smartcoby/smartcoby-dual-950mah/" target="_blank">CIO SmartCoby Dual for Apple Watch</a></li>
-              </ul>
-              <ul class="tab-content" x-show="activeTab === 'tab3'">
-                <li><a href="https://store.google.com/jp/product/google_nest_mini?hl=ja&pli=1" target="_blank">Google Home mini</a></li>
-                <li><a href="https://www.switchbot.jp/products/switchbot-hub2?srsltid=AfmBOopgpBq_UNAbT013HvSCr6myId8xQ2Zpow0OABt0TV6K-Tzf3YXk" target="_blank">SwitchBot Hub 2</a></li>
-                <li><a href="https://www.flexispot.jp/ef1.html?srsltid=AfmBOoq0e7_mP4IqMXWIuM7NIyWYDSONKn_lSYn3k6w_MlguqO_FMY-E" target="_blank">Flexispot EF-1</a></li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        <div class="section">
-          <div class="container">
-            <h1 class="title">
-              Contact
-            </h1>
-            <div class="contact-list">
-              <a href="mailto:contact.nao.9615@gmail.com" target="_blank" rel="noopener">
-                <ul>
-                  <li>
-                    <h1>Email</h1>
-                    <h2>contact.nao.9615@gmail.com</h2>
-                  </li>
-                  <li>
-                    <p>(SEND Email)</p>
-                  </li>
-                </ul>
-              </a>
-              <a href="https://x.com/messages/compose?recipient_id=1582637002209382400" target="_blank" rel="noopener">
-                <ul>
-                  <li>
-                    <h1>X Direct Message</h1>
-                    <h2>@Nao_9615</h2>
-                  </li>
-                  <li>
-                    <p>(VISIT x.com)</p>
-                  </li>
-                </ul>
-              </a>
-              <a href="https://discord.com/users/1090118805935632454" target="_blank" rel="noopener">
-                <ul>
-                  <li>
-                    <h1>Discord</h1>
-                    <h2>contact.nao.9615@gmail.com</h2>
-                  </li>
-                  <li>
-                    <p>(VISIT discord.com)</p>
-                  </li>
-                </ul>
-              </a>
-            </div>
+    </header>
+    <main class="main">
+      <section class="hero top-pic-pride-25">
+        <div class="pride-image">
+          <div class="pride-image-background"></div>
+          <div class="pride-image-mask">
+            <img src="./svg/logo.svg" />
           </div>
         </div>
       </section>
-      <footer class="footer">
+      <!-- PROFILE SECTION -->
+      <section class="section">
         <div class="container">
-          <p>©︎ 2025 Nao_9615 All Rights Reserved</p>
+          <h1 class="title">Profile</h1>
+          <p class="text is-en">
+            I am a 10th grader living in Tokyo and a devoted Apple enthusiast
+            with a keen interest in gadgets. I strive to understand Apple from
+            multiple perspectives by gathering information from various sources.
+            I actively share Apple-related information on X (formerly Twitter)
+            and also contribute articles on the subject. Currently, I own an M1
+            iPad Pro, which I use for almost all of my tasks, making me an avid
+            iPad user. I also enjoy watching YouTube videos, particularly those
+            related to Apple, gadgets, and Tokai On-Air (especially
+            Mushimegane).
+          </p>
+          <p class="text is-ja hidden">
+            現在高校一年生で東京在住のApple信者で、ガジェットオタク。様々な観点からの情報を得ることで多角的にAppleのことを考える。普段からXにてAppleに関連したことを中心に情報を発信するほか、記事も執筆する。現在はM1チップモデルのiPad
+            Proを所有し、ほぼ全ての作業をこなすiPad愛好家。また、YouTubeも頻繁に視聴し、Apple・ガジェット関連と東海オンエアが好き。推しは虫さん。
+          </p>
+          <div class="buttons">
+            <a href="http://x.com/nao_9615" target="_blank" rel="noopener">X</a>
+            <a href="https://x.com/Nao_9615_Key" target="_blank" rel="noopener"
+              >X<span>(SUB)</span></a
+            >
+            <a
+              href="https://www.instagram.com/nao_9615_/"
+              target="_blank"
+              rel="noopener"
+              >Instagram</a
+            >
+            <a
+              href="https://www.threads.net/@nao_9615_?xmt=AQGzEerBRjPf08DeDGtDnv4L3UVigB3nUH5K8XBM8Lp0cAQ"
+              target="_blank"
+              rel="noopener"
+              >Threads</a
+            >
+            <a
+              href="https://bsky.app/profile/nao9615.bsky.social"
+              target="_blank"
+              rel="noopener"
+              >BlueSky</a
+            >
+            <a
+              href="https://fiicen.jp/field/Nao_9615/"
+              target="_blank"
+              rel="noopener"
+              >Fiicen</a
+            >
+          </div>
         </div>
-      </footer>
-    </main>
-    <main class="page is-mobile">
-      <header class="header">
+      </section>
+      <!-- PODCAST SECTION -->
+      <section class="section">
         <div class="container">
-          <h1>Nao</h1>
-          <div class="controll">
-            <input type="checkbox" name="Lang" id="Lang-En-Ja" style="display: none;">
-            <label class="header-button" for="Lang-En-Ja">
-              <div class="lang-btn">
-                EN / JA
-              </div>
-            </label>
-            <input type="checkbox" name="dark-mode" id="color-theme-btn" style="display: none;">
-            <label class="header-button" for="color-theme-btn">
-              <div class="color-theme-icon"></div>
-            </label>
+          <h1 class="title">Podcasts</h1>
+          <p class="text is-en">
+            "Gadgetalk" is a program where we chat about Apple and other
+            gadget-related topics with everyone on X Spaces. We welcome your
+            feedback, thoughts, and suggestions for topics you'd like us to
+            discuss on the show. Please post them on X using the hashtag
+            #ガジェトーク. You can listen to the show on various podcast
+            platforms via the links below.
+          </p>
+          <p class="text is-ja hidden">
+            「ガジェトーク」はAppleの話をはじめ、ガジェットに関する話題をXのスペースで皆さんと雑談しあう番組です。この番組に対するご意見やご感想、番組中で取り扱ってほしい話題はXにハッシュタグ
+            #ガジェトーク
+            をつけてポストしてください。以下のリンクから各種Podcastからお聴きいただけます。
+          </p>
+          <div class="buttons">
+            <a
+              href="https://podcasts.apple.com/jp/podcast/%E3%82%AC%E3%82%B8%E3%82%A7%E3%83%88%E3%83%BC%E3%82%AF/id1762834711"
+              target="_blank"
+              rel="noopener"
+            >
+              Apple Podcast</a
+            >
+            <a
+              href="https://music.youtube.com/playlist?list=PLqcBUxXcWtOH46zjAoI4ss--0ZawcF46f&si=ZlB7IYPIC20ZJWjT"
+              target="_blank"
+              rel="noopener"
+              >Youtube Music</a
+            >
+            <a
+              href="https://open.spotify.com/show/60DDxgJRuj6lIsCBygD1XF"
+              target="_blank"
+              rel="noopener"
+              >Spotify</a
+            >
           </div>
         </div>
-      </header>
-      <section class="main">
-        <div class="section">
-          <div class="container">
-            <h1 class="title">
-              Profile
-            </h1>
-            <p class="text is-en">
-              I am a 10th grader living in Tokyo and a devoted Apple enthusiast with a keen interest in gadgets. I strive to understand Apple from multiple perspectives by gathering information from various sources. I actively share Apple-related information on X (formerly Twitter) and also contribute articles on the subject. Currently, I own an M1 iPad Pro, which I use for almost all of my tasks, making me an avid iPad user. I also enjoy watching YouTube videos, particularly those related to Apple, gadgets, and Tokai On-Air (especially Mushimegane).
-            </p>
-            <p class="text is-ja hidden">
-              現在高校一年生で東京在住のApple信者で、ガジェットオタク。様々な観点からの情報を得ることで多角的にAppleのことを考える。普段からXにてAppleに関連したことを中心に情報を発信するほか、記事も執筆する。現在はM1チップモデルのiPad Proを所有し、ほぼ全ての作業をこなすiPad愛好家。また、YouTubeも頻繁に視聴し、Apple・ガジェット関連と東海オンエアが好き。推しは虫さん。
-            </p>
-             <div class="buttons">
-              <a href="http://x.com/nao_9615" target="_blank" rel="noopener">X</a>
-              <a href="https://x.com/Nao_9615_Key" target="_blank" rel="noopener">X<span>(SUB)</span></a>
-              <a href="https://www.instagram.com/nao_9615_/" target="_blank" rel="noopener">Instagram</a>
-              <a href="https://www.threads.net/@nao_9615_?xmt=AQGzEerBRjPf08DeDGtDnv4L3UVigB3nUH5K8XBM8Lp0cAQ" target="_blank" rel="noopener">Threads</a>
-              <a href="https://bsky.app/profile/nao9615.bsky.social" target="_blank" rel="noopener">BlueSky</a>
-              <a href="https://fiicen.jp/field/Nao_9615/" target="_blank" rel="noopener">Fiicen</a>
+      </section>
+      <!-- MAGAZINE SECTION -->
+      <section class="section">
+        <div class="container">
+          <h1 class="title">Magazine</h1>
+          <p class="text is-en">
+            I write news and reviews about Apple on the blog “Ichigo Tsushin”
+            with my personal opinions.
+          </p>
+          <p class="text is-ja hidden">
+            Appleに関するニュースやレビューを、個人的な感想を交えてブログ「いちご通信」に執筆しています。
+          </p>
+          <div class="buttons">
+            <a
+              href="https://ichigomoti.jp/?author=10"
+              target="_blank"
+              rel="noopener"
+              >Visit Site</a
+            >
+          </div>
+        </div>
+      </section>
+      <!-- RECIPROCAL LINK SECTION -->
+      <section class="section">
+        <div class="container">
+          <h1 class="title">Reciprocal Link</h1>
+          <div class="buttons">
+            <a href="https://www.gasukaku.net/" target="_blank" rel="noopener"
+              >Gasukaku</a
+            >
+            <a href="https://linkserver.jp/" target="_blank" rel="noopener"
+              >Link.2011</a
+            >
+          </div>
+        </div>
+      </section>
+      <!-- GADGETS SECTION -->
+      <section class="section">
+        <div class="container">
+          <h1 class="title">
+            Gadgets I Own
+          </h1>
+          <div class="tab" x-data="{ activeTab: 'tab1' }">
+            <div class="tab-buttons">
+              <button :class="{ 'active': activeTab === 'tab1' }" @click="activeTab = 'tab1'">Apple Products</button>
+              <button :class="{ 'active': activeTab === 'tab2' }" @click="activeTab = 'tab2'">Charging Accessories</button>
+              <button :class="{ 'active': activeTab === 'tab3' }" @click="activeTab = 'tab3'">Home Accessories</button>
             </div>
-          </div>
-        </div>
-        <div class="section">
-          <div class="container">
-            <h1 class="title">
-              Podcast
-            </h1>
-            <p class="text is-en">
-              "Gadgetalk" is a program where we chat about Apple and other gadget-related topics with everyone on X Spaces. We welcome your feedback, thoughts, and suggestions for topics you'd like us to discuss on the show. Please post them on X using the hashtag #ガジェトーク. You can listen to the show on various podcast platforms via the links below.
-            </p>
-            <p class="text is-ja hidden">
-              「ガジェトーク」はAppleの話をはじめ、ガジェットに関する話題をXのスペースで皆さんと雑談しあう番組です。この番組に対するご意見やご感想、番組中で取り扱ってほしい話題はXにハッシュタグ #ガジェトーク をつけてポストしてください。以下のリンクから各種Podcastからお聴きいただけます。
-            </p>
-            <div class="buttons">
-              <a href="https://podcasts.apple.com/jp/podcast/%E3%82%AC%E3%82%B8%E3%82%A7%E3%83%88%E3%83%BC%E3%82%AF/id1762834711" target="_blank" rel="noopener"> Apple Podcast</a>
-              <a href="https://music.youtube.com/playlist?list=PLqcBUxXcWtOH46zjAoI4ss--0ZawcF46f&si=ZlB7IYPIC20ZJWjT" target="_blank" rel="noopener">Youtube Music</a>
-              <a href="https://open.spotify.com/show/60DDxgJRuj6lIsCBygD1XF" target="_blank" rel="noopener">Spotify</a>
-            </div>
-          </div>
-        </div>
-        <div class="section">
-          <div class="container">
-            <h1 class="title">
-              Magazine
-            </h1>
-            <p class="text is-en">
-              I write news and reviews about Apple on the blog “Ichigo Tsushin” with my personal opinions.
-            </p>
-            <p class="text is-ja hidden">
-              Appleに関するニュースやレビューを、個人的な感想を交えてブログ「いちご通信」に執筆しています。
-            </p>
-            <div class="buttons">
-              <a href="https://ichigomoti.jp/?author=10" target="_blank" rel="noopener">Visit Site</a>
-            </div>
-          </div>
-        </div>
-        <div class="section">
-          <div class="container">
-            <h1 class="title">
-              Reciprocal Link
-            </h1>
-            <div class="buttons">
-              <a href="https://www.gasukaku.net/" target="_blank" rel="noopener">Gasukaku</a>
-              <a href="https://linkserver.jp/" target="_blank" rel="noopener">Link.2011</a>
-            </div>
-          </div>
-        </div>
-        <div class="section">
-          <div class="container">
-            <h1 class="title">
-              Gadgets I Own
-            </h1>
-            <div class="tab" x-data="{ activeTab: 'tab1' }">
-              <div class="tab-buttons">
-                <button :class="{ 'active': activeTab === 'tab1' }" @click="activeTab = 'tab1'">Apple</button>
-                <button :class="{ 'active': activeTab === 'tab2' }" @click="activeTab = 'tab2'">Charging</button>
-                <button :class="{ 'active': activeTab === 'tab3' }" @click="activeTab = 'tab3'">Home</button>
-              </div>
-              <ul class="tab-content" x-show="activeTab === 'tab1'">
-                <li><a href="https://web.archive.org/web/20220725114402/https://www.apple.com/ipad-pro/" target="_blank">iPad Pro 11-inch 3rd Generation (128GB, Wi-Fi, Space-gray)</a></li>
-                <li><a href="https://www.apple.com/shop/product/MQLY3AM/A/apple-pencil-1st-generation?fnode=a99f2033f8c044b7d15cdf295f9c58cc45e48a89b56e414ccc225c4fbd76455c7c89a1ea5fea6cd95b6e422196cb0adc7d234ed887446573813923796917f4cdf3b4cdd4a1f063e5039952d5b7f2fc8639334cbdcc3d5669403cc7f7187293c1" target="_blank">Apple Pencil 1st Generation</a></li>
-                <li><a href="https://www.apple.com/shop/product/MU8F2AM/A/apple-pencil-2nd-generation" target="_blank">Apple Pencil 2nd Generation</a></li>
-                <li><a href="https://www.apple.com/iphone-se/" target="_blank">iPhone SE 3rd Generation (64GB, Starlight)</a></li>
-                <li><a href="https://www.apple.com/apple-watch-series-10/" target="_blank">Apple Watch Series 10 (GPS, Jet Black)</a></li>
-                <li><a href="https://www.apple.com/apple-watch-se/" target="_blank">Apple Watch SE (1st Generation, GPS, Space-gray)</a></li>
-                <li><a href="https://web.archive.org/web/20180504104411/https://www.apple.com/shop/product/MLA22LL/A/magic-keyboard-us-english?fnode=9d" target="_blank">Magic Keyboard 2018 (JIS, TKL, Silver)</a></li>
-                <li><a href="https://web.archive.org/web/20190401173805/http://www.apple.com/airpods/" target="_blank">AirPods 2nd Generation</a></li>
-                <li><a href="https://www.apple.com/airpods-4/" target="_blank">AirPods 4th Generation (ANC Model)</a></li>
-                <li><a href="https://web.archive.org/web/20171004024720/https://www.apple.com/shop/buy-iphone/iphone-7#" target="_blank">iPhone 7 (32GB, Silver)</a></li>
-              </ul>
-              <ul class="tab-content" x-show="activeTab === 'tab2'">
-                <li><a href="https://www.ankerjapan.com/products/a2664?srsltid=AfmBOorcHW8CmHBROeU4jhkPOS2_7SBK7Kl2W0I_AdD1IcigY82e7P2e" target="_blank">Anker Nano II 45W</a></li>
-                <li><a href="https://www.ankerjapan.com/products/a2039?srsltid=AfmBOoq5lpJAbfWAvXaVaRaWVofkhwyD4Fb94mgeZbV3D4HlDxCpKiEp" target="_blank">Anker Nano 3 47W USB-C x2 (Anker 523)</a></li>
-                <li><a href=https://www.ankerjapan.com/products/a2620?srsltid=AfmBOooJR9r1BQVGzNeYwmwOGBS4W_GOd2ztOsz1JWtpCeoMFdwHXYnF" target="_blank">Anker PowerPort mini 12W USB-A x2</a></li>
-                <li><a href="https://www.ankerjapan.com/products/y2330?srsltid=AfmBOoqzozGX3XBp7N__6ot_Dclv0PZl_Y9x-CLm35pT91DqVBNL8JaQ" target="_blank">Anker PowerLine Play 90 (USB-A to Lightning, 1.8m)</a></li>
-                <li><a href="https://www.ankerjapan.com/products/a8663?srsltid=AfmBOopCfA2gbRyDM5OWqWc7tSj170Di7pHrgetH8OrUbc44eKwMNuL5" target="_blank">Anker PowerLine Flow (USB-C to Lightning, 1.8m)</a></li>
-                <li><a href="https://www.ankerjapan.com/products/a8487?srsltid=AfmBOorIM-Co-vE9QDuuRU3vMLMT--M_y2OzUY4QB6lUgcEjqUV46k8g" target="_blank">Anker 515 USB4 Cable</a></li>
-                <li><a href="https://www.ankerjapan.com/products/a2524012?srsltid=AfmBOoq7sJb-QNX8M94n366gwCDVnvxOG7iXZgvW8bv6_AmWZMAi_RBt" target="_blank">Anker PowerWave 10 Stand</a></li>
-                <li><a href="https://www.ankerjapan.com/products/a1634?srsltid=AfmBOorjfx1hAjfr0FaDXNrhRmytDzntF6pfri3bKs13F7OxcADhSoaW" target="_blank">Anker PowerCore Fusion (30W, 5000mAh, Built-In USB-C)</a></li>
-                <li><a href="https://www.ankerjapan.com/products/a8352?srsltid=AfmBOorZzW2iKKNOXWtAXkAPjF_7CZns86rBxfw2BHg8k6AYCK24Vx6K" target="_blank">Anker PowerExpand+ 7-in-1 USB Hub</a></li>
-                <li><a href="https://www.ankerjapan.com/products/a83a2?srsltid=AfmBOordqmSnXIbZPLWckt6SBxyL_guon14rX0d0Lwz0Xb5EaP7Pt_pA" target="_blank">Anker 364 USB-C Hub</a></li>
-                <li><a href="https://www.elecom.co.jp/products/ECT-1530BK.html" target="_blank">ELECOM Power Tap ECT-1530BK</a></li>
-                <li><a href="https://www.ankerjapan.com/products/a8803?srsltid=AfmBOoockmxsDZjNte6KBRZqRSY7STlbbNK8z7aq1_iv5clV7eo_gQp6" target="_blank">Anker Portable Magnetic Charger for Apple Watch</a></li>
-                <li><a href="https://connectinternationalone.co.jp/cioproduct/mobilebattery/smartcoby/smartcoby-dual-950mah/" target="_blank">CIO SmartCoby Dual for Apple Watch</a></li>
-              </ul>
-              <ul class="tab-content" x-show="activeTab === 'tab3'">
-                <li><a href="https://store.google.com/jp/product/google_nest_mini?hl=ja&pli=1" target="_blank">Google Home mini</a></li>
-                <li><a href="https://www.switchbot.jp/products/switchbot-hub2?srsltid=AfmBOopgpBq_UNAbT013HvSCr6myId8xQ2Zpow0OABt0TV6K-Tzf3YXk" target="_blank">SwitchBot Hub 2</a></li>
-                <li><a href="https://www.flexispot.jp/ef1.html?srsltid=AfmBOoq0e7_mP4IqMXWIuM7NIyWYDSONKn_lSYn3k6w_MlguqO_FMY-E" target="_blank">Flexispot EF-1</a></li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        <div class="section">
-          <div class="container">
-            <h1 class="title">
-              Contact
-            </h1>
-            <ul>
-              <li></li>
+            <ul class="tab-content" x-show="activeTab === 'tab1'">
+              <li><a href="https://web.archive.org/web/20220725114402/https://www.apple.com/ipad-pro/" target="_blank">iPad Pro 11-inch 3rd Generation (128GB, Wi-Fi, Space-gray)</a></li>
+              <li><a href="https://www.apple.com/shop/product/MQLY3AM/A/apple-pencil-1st-generation?fnode=a99f2033f8c044b7d15cdf295f9c58cc45e48a89b56e414ccc225c4fbd76455c7c89a1ea5fea6cd95b6e422196cb0adc7d234ed887446573813923796917f4cdf3b4cdd4a1f063e5039952d5b7f2fc8639334cbdcc3d5669403cc7f7187293c1" target="_blank">Apple Pencil 1st Generation</a></li>
+              <li><a href="https://www.apple.com/shop/product/MU8F2AM/A/apple-pencil-2nd-generation" target="_blank">Apple Pencil 2nd Generation</a></li>
+              <li><a href="https://www.apple.com/iphone-se/" target="_blank">iPhone SE 3rd Generation (64GB, Starlight)</a></li>
+              <li><a href="https://www.apple.com/apple-watch-series-10/" target="_blank">Apple Watch Series 10 (GPS, Jet Black)</a></li>
+              <li><a href="https://www.apple.com/apple-watch-se/" target="_blank">Apple Watch SE (1st Generation, GPS, Space-gray)</a></li>
+              <li><a href="https://web.archive.org/web/20180504104411/https://www.apple.com/shop/product/MLA22LL/A/magic-keyboard-us-english?fnode=9d" target="_blank">Magic Keyboard 2018 (JIS, TKL, Silver)</a></li>
+              <li><a href="https://web.archive.org/web/20190401173805/http://www.apple.com/airpods/" target="_blank">AirPods 2nd Generation</a></li>
+              <li><a href="https://www.apple.com/airpods-4/" target="_blank">AirPods 4th Generation (ANC Model)</a></li>
+              <li><a href="https://web.archive.org/web/20171004024720/https://www.apple.com/shop/buy-iphone/iphone-7#" target="_blank">iPhone 7 (32GB, Silver)</a></li>
             </ul>
-            <div class="contact-buttons">
-              <a class="button" href="mailto:contact.nao.9615@gmail.com">
-                <h1>Emaill</h1>
-                <h2>contact.nao.9615@gmail.com</h2>
-                <p>(SEND EMAIL)</p>
-              </a>
-              <a class="button" href="https://x.com/messages/compose?recipient_id=1582637002209382400" target="_blank">
-                <h1>X DM</h1>
-                <h2>@nao_9615</h2>
-                <p>(VISIT X.COM)</p>
-              </a>
-              <a class="button" href="https://discord.com/users/1090118805935632454" target="_blank">
-                <h1>Discord</h1>
-                <h2>@nao_9615</h2>
-                <p>(VISIT DISCORD)</p>
-              </a>
-            </div>
+            <ul class="tab-content" x-show="activeTab === 'tab2'">
+              <li><a href="https://www.ankerjapan.com/products/a2664?srsltid=AfmBOorcHW8CmHBROeU4jhkPOS2_7SBK7Kl2W0I_AdD1IcigY82e7P2e" target="_blank">Anker Nano II 45W</a></li>
+              <li><a href="https://www.ankerjapan.com/products/a2039?srsltid=AfmBOoq5lpJAbfWAvXaVaRaWVofkhwyD4Fb94mgeZbV3D4HlDxCpKiEp" target="_blank">Anker Nano 3 47W USB-C x2 (Anker 523)</a></li>
+              <li><a href=https://www.ankerjapan.com/products/a2620?srsltid=AfmBOooJR9r1BQVGzNeYwmwOGBS4W_GOd2ztOsz1JWtpCeoMFdwHXYnF" target="_blank">Anker PowerPort mini 12W USB-A x2</a></li>
+              <li><a href="https://www.ankerjapan.com/products/y2330?srsltid=AfmBOoqzozGX3XBp7N__6ot_Dclv0PZl_Y9x-CLm35pT91DqVBNL8JaQ" target="_blank">Anker PowerLine Play 90 (USB-A to Lightning, 1.8m)</a></li>
+              <li><a href="https://www.ankerjapan.com/products/a8663?srsltid=AfmBOopCfA2gbRyDM5OWqWc7tSj170Di7pHrgetH8OrUbc44eKwMNuL5" target="_blank">Anker PowerLine Flow (USB-C to Lightning, 1.8m)</a></li>
+              <li><a href="https://www.ankerjapan.com/products/a8487?srsltid=AfmBOorIM-Co-vE9QDuuRU3vMLMT--M_y2OzUY4QB6lUgcEjqUV46k8g" target="_blank">Anker 515 USB4 Cable</a></li>
+              <li><a href="https://www.ankerjapan.com/products/a2524012?srsltid=AfmBOoq7sJb-QNX8M94n366gwCDVnvxOG7iXZgvW8bv6_AmWZMAi_RBt" target="_blank">Anker PowerWave 10 Stand</a></li>
+              <li><a href="https://www.ankerjapan.com/products/a1634?srsltid=AfmBOorjfx1hAjfr0FaDXNrhRmytDzntF6pfri3bKs13F7OxcADhSoaW" target="_blank">Anker PowerCore Fusion (30W, 5000mAh, Built-In USB-C)</a></li>
+              <li><a href="https://www.ankerjapan.com/products/a8352?srsltid=AfmBOorZzW2iKKNOXWtAXkAPjF_7CZns86rBxfw2BHg8k6AYCK24Vx6K" target="_blank">Anker PowerExpand+ 7-in-1 USB Hub</a></li>
+              <li><a href="https://www.ankerjapan.com/products/a83a2?srsltid=AfmBOordqmSnXIbZPLWckt6SBxyL_guon14rX0d0Lwz0Xb5EaP7Pt_pA" target="_blank">Anker 364 USB-C Hub</a></li>
+              <li><a href="https://www.elecom.co.jp/products/ECT-1530BK.html" target="_blank">ELECOM Power Tap ECT-1530BK</a></li>
+              <li><a href="https://www.ankerjapan.com/products/a8803?srsltid=AfmBOoockmxsDZjNte6KBRZqRSY7STlbbNK8z7aq1_iv5clV7eo_gQp6" target="_blank">Anker Portable Magnetic Charger for Apple Watch</a></li>
+              <li><a href="https://connectinternationalone.co.jp/cioproduct/mobilebattery/smartcoby/smartcoby-dual-950mah/" target="_blank">CIO SmartCoby Dual for Apple Watch</a></li>
+            </ul>
+            <ul class="tab-content" x-show="activeTab === 'tab3'">
+              <li><a href="https://store.google.com/jp/product/google_nest_mini?hl=ja&pli=1" target="_blank">Google Home mini</a></li>
+              <li><a href="https://www.switchbot.jp/products/switchbot-hub2?srsltid=AfmBOopgpBq_UNAbT013HvSCr6myId8xQ2Zpow0OABt0TV6K-Tzf3YXk" target="_blank">SwitchBot Hub 2</a></li>
+              <li><a href="https://www.flexispot.jp/ef1.html?srsltid=AfmBOoq0e7_mP4IqMXWIuM7NIyWYDSONKn_lSYn3k6w_MlguqO_FMY-E" target="_blank">Flexispot EF-1</a></li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <!-- CONTACT SECTION -->
+      <section class="section">
+        <div class="container">
+          <h1 class="title">
+            Contact
+          </h1>
+          <div class="buttons">
+            <a href="mailto:contact.nao.9615@gmail.com" target="_blank" rel="noopener">
+              E-mail
+            </a>
+            <a href="https://x.com/messages/compose?recipient_id=1582637002209382400" target="_blank" rel="noopener">
+              X DM
+            </a>
+            <a href="https://discord.com/users/1090118805935632454" target="_blank" rel="noopener">
+              Discord
+            </a>
           </div>
         </div>
       </section>
@@ -379,6 +282,6 @@
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollToPlugin.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/Draggable.min.js"></script>
-    <script type='text/javascript' src="./js/main.js"></script>
+    <script type="text/javascript" src="./js/main.js"></script>
   </body>
 </html>

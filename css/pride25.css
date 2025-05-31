@@ -1,0 +1,30 @@
+.pride-image {
+  position: relative;
+  width: 100%;
+  height: auto;
+  aspect-ratio: auto 5 / 3;
+}
+.pride-image-background {
+  position: absolute;
+  width: 100%;
+  height: auto;
+  aspect-ratio: auto 5 / 3;
+  background-image: url(../svg/pride25.svg);
+  border-radius: 5px;
+  background-size: cover;
+  z-index: 1;
+}
+.pride-image-mask {
+  position: absolute;
+  width: 100%;
+  height: auto;
+  aspect-ratio: auto 5 / 3;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+  z-index: 2;
+}
+.pride-image-mask img {
+  width: 160px;
+  margin: 12px;
+}

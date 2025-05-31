@@ -4,101 +4,59 @@
   width: 100vw;
   height: var(--full-height);
 }
+:root {
+  --font-size-1: clamp(14px, 1.5vw, 18px);
+  --font-size-2: clamp(8px, 1vw, 10px);
+  --font-size-large: clamp(70px, 7vw, 80px);
+}
+.text {
+  font-size: var(--font-size-1);
+  font-weight: 500;
+  line-height: 120%;
+}
+.title {
+  font-size: var(--font-size-large);
+  line-height: 100%;
+  margin-bottom: 32px;
+  font-weight: 700;
+}
 
-/* ヘッダー デスクトップ */
-.is-desktop .header-logo {
+/* ヘッダー */
+.header {
   position: fixed;
   top: 0;
   left: 0;
-  height: 4rem;
-  display: flex;
-  align-items: center;
-  padding: 0 1.5rem;
+  width: 100vw;
+  height: 0px;
 }
-.is-desktop .header-logo h1 {
-  line-height: 1;
-  font-size: 2rem;
-}
-.is-desktop .preferences {
-  position: fixed;
-  top: 0;
-  right: 0;
-  height: 4rem;
-  display: flex;
-  align-items: center;
-  padding: 0 1.5rem;
-}
-.is-desktop .preferences label {
-  margin-left: 1rem;
-  font-size: 0.8rem;
-}
-.is-desktop .preferences .color-theme-icon {
-  height: 1rem;
-  aspect-ratio: 1 / 1;
-  border-radius: 100%;
-  border: solid 1px var(--main-text);
-  background-image: linear-gradient(
-    to right,
-    var(--main-text) 50%,
-    #00000000 50%
-  );
-}
-.is-desktop .scroll-indicator {
-  position: fixed;
-  bottom: 0;
-  right: 0;
-  height: 4rem;
-  display: flex;
-  align-items: center;
-  padding: 0 1.5rem;
-}
-.is-desktop .scroll-indicator .indicator {
-  position: relative;
-  margin: 0 1rem;
-  width: 6rem;
-  height: 2px;
-  background-color: var(--light-bg);
-}
-.is-desktop .scroll-indicator .indicator .indicator-inner {
+.header h1 {
   position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 0%;
-  background-color: var(--main-text);
-}
-
-/* ヘッダー モバイル */
-.is-mobile .header {
-  position: fixed;
-  z-index: 999;
-  width: 100vw;
-  padding: 1rem;
-}
-.is-mobile .header .container {
-  width: 100%;
-  max-width: 800px;
+  top: 12px;
+  left: 12px;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-.is-mobile .header .container .controll {
-  display: flex;
-  align-items: center;
-}
-.is-mobile .header h1 {
-  font-size: 1.5rem;
+  font-size: 24px;
   line-height: 1;
-  font-weight: 600;
+  z-index: 999;
 }
-.is-mobile .header .controll label {
-  margin-left: 1rem;
+.preferences {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  display: flex;
+  z-index: 999;
 }
-.is-mobile .header .lang-btn {
-  font-size: 0.8rem;
+.preferences label {
+  margin-left: 12px;
+  display: flex;
+  align-items: center;
 }
-.is-mobile .header .color-theme-icon {
-  height: 1rem;
+.preferences label p {
+  line-height: 1;
+  font-size: 16px;
+  font-weight: 500;
+}
+.preferences .color-theme-icon {
+  height: 18px;
   aspect-ratio: 1 / 1;
   border-radius: 100%;
   border: solid 1px var(--main-text);
@@ -109,321 +67,89 @@
   );
 }
 
-/* メイン デスクトップ */
-.is-desktop .main {
+/* メイン */
+.main {
   width: 100vw;
   display: flex;
   align-items: center;
   flex-direction: column;
-  padding: 0 1.5rem;
+  padding: 12px;
 }
-.is-desktop .main .hero {
-  width: 100%;
-  height: var(--full-height);
-  padding: 3rem 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.is-desktop .main .hero .logo-box {
-  width: 100%;
-  max-width: 1100px;
-  aspect-ratio: 16 / 9;
-  max-height: calc(var(--full-height) - 6rem);
-  background-color: #000000;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.is-desktop .main .hero .logo-box img {
-  width: 300px;
-}
-.is-desktop .main .section {
+.main .hero {
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
   max-width: 1100px;
+  width: 100%;
+  padding: 6rem 0 0 0;
+}
+.main .section {
+  display: flex;
+  flex-direction: column;
+  max-width: 1000px;
   width: 100%;
   margin-top: 6rem;
 }
-.is-desktop .main .section:last-child {
+.main .section:last-child {
   margin-bottom: 6rem;
 }
-.is-desktop .main .section .container .title {
-  font-size: 5rem;
-  line-height: 1;
-  margin-bottom: 1rem;
-  font-weight: 800;
-}
-.is-desktop .main .section .container .buttons {
-  display: flex;
-  flex-wrap: wrap;
-  margin: 1.5rem 0;
-}
-.is-desktop .main .section .container .buttons a {
-  border: solid 1px var(--main-text);
-  border-radius: 4px;
-  padding: 0.6em 1rem;
-  font-size: 0.8rem;
-  font-weight: 700;
-  margin-right: 0.6rem;
-}
-.is-desktop .main .section .container .buttons a span {
-  font-size: 0.6rem;
-  font-weight: 600;
-}
-.is-desktop .main .section .container .tab-buttons {
-  display: flex;
-  flex-wrap: wrap;
-  margin: 1.5rem 0;
-}
-.is-desktop .main .section .container .tab-buttons button {
-  border: solid 1px var(--main-text);
-  border-radius: 4px;
-  padding: 0.6em 1rem;
-  background: none;
-  font-size: 0.8rem;
-  font-weight: 700;
-  margin-right: 0.6rem;
-}
-.is-desktop .main .section .container .tab .tab-buttons button.active {
-  background-color: var(--main-text);
-  color: var(--main-bg);
-  border-color: var(--main-text);
-}
-.is-desktop .main .section .container .tab .tab-content {
-  margin-bottom: 1.5rem;
-}
-.is-desktop .main .section .container .tab .tab-content li {
-  padding: 1rem 1.5rem;
-  border-bottom: dotted 1px var(--main-text);
-}
-.is-desktop .main .section .container .tab .tab-content li a {
-  font-weight: 600;
-}
-.is-desktop .main .section .container .tab .tab-content li:first-child {
-  border-top: dotted 1px var(--main-text);
-}
-.is-desktop .main .section .container .contact-list a:first-child {
-  border-top: dotted 1px var(--main-text);
-}
-.is-desktop .main .section .container .contact-list a {
-  display: flex;
-  padding: 0;
-  border-bottom: dotted 1px var(--main-text);
-}
-.is-desktop .main .section .container .contact-list a ul {
+.main .footer {
   width: 100%;
-  display: flex;
-  justify-content: space-between;
-  padding: 1rem 1.5rem;
-  cursor: pointer;
+  margin-top: 6rem;
 }
-.is-desktop .main .section .container .contact-list a ul li h1 {
-  font-weight: 600;
+.main .footer p {
+  font-size: var(--font-size-1);
+  font-weight: 500;
+  line-height: 100%;
 }
-.is-desktop .main .section .container .contact-list a ul li h2 {
-  font-size: 0.6rem;
-  font-weight: 600;
-  user-select: text;
-  -webkit-user-select: text;
-  cursor: text;
-}
-.is-desktop .main .section .container .contact-list a ul li p {
-  font-size: 0.6rem;
-  font-weight: 600;
-}
-.is-desktop .main .section .container .text {
-  text-align: justify;
-  user-select: text;
-  -webkit-user-select: text;
-  cursor: text;
-  font-size: 1rem;
-  font-weight: 400;
-  line-height: 1.7;
-}
-
-/* メイン モバイル */
-.is-mobile .main {
-  width: 100vw;
-  display: flex;
-  flex-direction: column;
-  padding: 3rem 1rem 1rem 1rem;
-}
-.is-mobile .main .section {
-  display: flex;
-  flex-direction: column;
-  margin-top: 4rem;
-}
-.is-mobile .main .section:last-child {
-  margin-bottom: 4rem;
-}
-.is-mobile .main .section .container .title {
-  font-size: 4rem;
-  line-height: 1;
-  margin-bottom: 1rem;
-  font-weight: 700;
-}
-.is-mobile .main .section .container h2 {
-  font-size: 0.8rem;
-  margin-bottom: 1rem;
-}
-.is-mobile .main .section .container .buttons {
+.buttons {
   display: flex;
   flex-wrap: wrap;
-  margin: 0.4rem 0 0 0;
+  margin-top: 32px;
 }
-.is-mobile .main .section .container .buttons a {
-  border: solid 1px var(--main-text);
+.buttons a {
+  margin: 3px;
+  border: none;
+  background: rgba(180, 180, 180, 0.2);
   border-radius: 4px;
-  padding: 0.6em 1rem;
-  font-size: 0.7rem;
-  font-weight: 600;
-  margin-right: 0.6rem;
-  margin-top: 0.6rem;
+  padding: 8px 32px;
+  font-size: var(--font-size-1);
+  font-weight: 500;
 }
-.is-mobile .main .section .container .buttons a span {
-  font-size: 0.5rem;
-  font-weight: 600;
+.buttons a span {
+  font-size: var(--font-size-2);
+  font-weight: 500;
 }
-.is-mobile .main .section .container .tab-buttons {
+.tab-buttons {
   display: flex;
   flex-wrap: wrap;
-  margin: 1rem 0 0.6rem 0;
+  margin-bottom: 32px;
 }
-.is-mobile .main .section .container .tab-buttons button {
-  border: solid 1px var(--main-text);
-  border-radius: 4px;
-  padding: 0.6em 1rem;
-  font-size: 0.7rem;
-  background: none;
-  font-weight: 700;
-  margin-right: 0.6rem;
+.tab-buttons button {
+  margin: 3px;
+  border: none;
+  background: rgba(180, 180, 180, 0.2);
+  border-radius: 5px;
+  padding: 8px 32px;
+  font-size: var(--font-size-1);
+  font-weight: 500;
 }
-.is-mobile .main .section .container .tab .tab-buttons button.active {
-  background-color: var(--main-text);
+.tab-buttons button.active {
+  background: var(--main-text);
   color: var(--main-bg);
-  border-color: var(--main-text);
 }
-.is-mobile .main .section .container .tab .tab-content {
-  margin-bottom: 1rem;
-}
-.is-mobile .main .section .container .tab .tab-content li {
-  padding: 0.5rem 1rem;
-  border-bottom: dotted 1px var(--main-text);
-}
-.is-mobile .main .section .container .tab .tab-content li a {
-  font-size: 0.8rem;
-  font-weight: 600;
-}
-.is-mobile .main .section .container .tab .tab-content li:first-child {
+.tab-content li {
+  display: flex;
   border-top: dotted 1px var(--main-text);
 }
-.is-mobile .main .section .container .contact-buttons {
-  display: flex;
-  flex-direction: column;
-  margin: 1.5rem 0;
+.tab-content li:last-child {
+  border-bottom: dotted 1px var(--main-text);
 }
-.is-mobile .main .section .container .contact-buttons .button {
-  flex: 1;
-  text-align: start;
-  background: var(--main-bg);
-  border: solid 1px var(--main-text);
-  border-radius: 4px;
-  padding: 0.6rem 1rem;
-  margin-bottom: 0.6rem;
-}
-.is-mobile .main .section .container .contact-buttons .button:last-child {
-  margin-bottom: 0;
-}
-.is-mobile .main .section .container .contact-buttons .button h1 {
-  font-size: 1.25rem;
-  margin: 0;
-  cursor: pointer;
-}
-.is-mobile .main .section .container .contact-buttons .button h2 {
-  font-size: 0.6rem;
-  font-weight: 500;
-  margin: 0;
-  user-select: text;
-  -webkit-user-select: text;
-  cursor: text;
-}
-.is-mobile .main .section .container .contact-buttons .button p {
-  font-size: 0.6rem;
-  font-weight: 500;
-  margin-top: 2rem;
-  cursor: pointer;
-}
-.is-mobile .main .section .container .text {
-  text-align: justify;
-  user-select: text;
-  -webkit-user-select: text;
-  cursor: text;
-  font-size: 0.8rem;
-  font-weight: 400;
-}
-
-/* フッター デスクトップ */
-.is-desktop .footer {
-  width: 100vw;
-  display: flex;
-  justify-content: space-between;
-  padding: 1.5rem;
-}
-.is-desktop .footer p {
-  font-size: 1rem;
-  font-weight: 600;
-}
-
-/* フッター モバイル */
-.is-mobile .footer {
-  width: 100vw;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  padding: 24px;
-}
-.is-mobile .footer p {
-  font-size: 0.8rem;
-  font-weight: 500;
-}
-.is-mobile .footer h1 {
-  font-size: 1rem;
-  font-weight: 800;
-}
-.is-mobile .footer .buttons {
-  display: flex;
-  flex-wrap: wrap;
-  margin: 1rem 0;
-}
-.is-mobile .footer .buttons a {
-  border: solid 1px var(--main-text);
-  border-radius: 4px;
-  font-size: 0.8rem;
-  font-weight: 700;
-  padding: 0.6em 1rem;
-  margin-right: 0.6rem;
-  margin-bottom: 0.6rem;
-}
-.is-mobile .footer .buttons a span {
-  font-size: 0.6rem;
-  font-weight: 600;
-}
-.is-mobile .footer .buttons-fullwidth {
-  display: flex;
-  flex-direction: column;
-  margin: 1rem 0;
-}
-.is-mobile .footer .buttons-fullwidth a {
+.tab-content li a {
   width: 100%;
-  border: solid 1px var(--main-text);
-  border-radius: 4px;
-  display: flex;
-  justify-content: space-between;
-  padding: 0.6em 1rem;
-  margin-bottom: 0.6rem;
-}
-.is-mobile .footer .buttons-fullwidth a span {
-  font-size: 0.8rem;
-  font-weight: 700;
+  height: 100%;
+  padding: 8px 32px;
+  font-size: var(--font-size-1);
+  font-weight: 500;
 }

@@ -1,41 +1,60 @@
 * {
   color: var(--main-text);
-  font-family: 'Din', 'SourceHanSansJP';
+  font-family: "Din", "SourceHanSansJP";
   font-weight: 700;
 }
 
-@media only screen and (max-width: 600px) { .is-desktop{display: none !important;} }
-@media only screen and (min-width: 600px) { .is-mobile{display: none !important; } }
+@media only screen and (max-width: 600px) {
+  .is-desktop {
+    display: none !important;
+  }
+}
+@media only screen and (min-width: 600px) {
+  .is-mobile {
+    display: none !important;
+  }
+}
 
 :root {
   --vh: 0;
-  --full-height: calc(var(--vh) * 100 );
+  --full-height: calc(var(--vh) * 100);
 }
 
-.hidden { display: none; }
+.hidden {
+  display: none;
+}
 
 .light-mode {
   --main-text: #000000;
+  --main-light-text: #1e1e1e55;
   --main-bg: #fefefe;
   --light-bg: #dfe2eb77;
-  .is-light-theme{ display: block; }
-  .is-dark-theme{ display: none; }
+  .is-light-theme {
+    display: block;
+  }
+  .is-dark-theme {
+    display: none;
+  }
 }
 
 .dark-mode {
   --main-text: #e9e9e9;
   --main-bg: #000000;
   --light-bg: #1c1c1e;
-  .is-dark-theme{ display: block; }
-  .is-light-theme{ display: none; }
+  .is-dark-theme {
+    display: block;
+  }
+  .is-light-theme {
+    display: none;
+  }
 }
 
 .blur {
-  -webkit-backdrop-filter: blur(10px);
-  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(30px);
+  backdrop-filter: blur(30px);
 }
 
-::selection{
+::selection {
   background-color: #c6e3c0;
   color: #000000;
 }

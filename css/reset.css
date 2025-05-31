@@ -1,5 +1,4 @@
-
-html{
+html {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
@@ -7,19 +6,14 @@ html{
   -moz-text-size-adjust: 100%;
   text-size-adjust: 100%;
   min-width: 350px;
-  overflow-x: hidden;
-  overflow-y: scroll;
-  scroll-behavior: none;
-  overscroll-behavior: none;
 }
 
-body{
+body {
   margin: 0;
   padding: 0;
   width: 100vw;
   height: calc(100 * var(--vh));
   min-width: 300px;
-  overflow: hidden;
   background-color: var(--main-bg);
   -webkit-user-drag: none;
   -webkit-user-select: none;
@@ -29,7 +23,8 @@ body{
   text-size-adjust: none;
 }
 
-a,label{
+a,
+label {
   cursor: pointer;
   text-decoration: none;
 }
@@ -52,7 +47,12 @@ body {
   cursor: default;
 }
 
-h1,h2{
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   margin-block-start: 0;
   margin-block-end: 0;
   margin-inline-start: 0;
@@ -68,7 +68,7 @@ p {
   unicode-bidi: isolate;
 }
 
-ul{
+ul {
   margin-block-start: 0;
   margin-block-end: 0;
   padding-inline-start: 0;
